@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.container {
+    background-color: rgb(241, 236, 212);
+}
+#main-img {
+    display: flex;
+    height: 250px;
+    /* border: rgb(155, 155, 199) solid 1px; */
+    
+}
+
+#mainImage {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#s-images {
+    height: 80px;
+    display: flex;
+    padding: 0;
+    width: 25%;
+}
+
+#s-img-1, #s-img-2 {
+    border: rgb(155, 155, 199) solid 1px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+#qtySelect{
+    width: 15%;
+    border: rgb(155, 155, 199) solid 1px;
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: 3px;
+}
+#qty {
+    display: inline-block;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    
+}
+
+#orderButton {
+    margin-bottom: 20px;
+    border-radius: 30px;
+    animation-name: shake-with-delay;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake-with-delay {
+    from, 16%, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    1.6%, 4.8%, 8%, 11.2%, 14.4% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    3.2%, 6.4%, 9.6%, 12.8% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+  
+#imgDesciption {
+    display: flex;
+    height: 250px;
+    margin-bottom: 5px;
+}
+
+#imgDesc_1, #imgDesc_2 {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+p {
+    padding-top: 1em;
+    text-align: justify;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#Oldprice {
+    margin-left: 5px;
+}
+
+#orderConfirmation {
+    width: 80%;
+    background-color: rgb(255, 166, 0);
+    color: black;
+    font-weight: bold;
+
+}
+
+
+
+/* @media(min-width:760px) {
+    #images, #ProductTitle {
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+} */
+
+@media(min-width:760px)
+{
+#images, #imgDesc_1, #imgDesc_2 {
+    padding-left: 200px;
+    padding-right: 200px;
+    }
+}
+
+
+
+
